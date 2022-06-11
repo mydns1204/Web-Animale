@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css?family=Kodchasan');
+
+body {
+    background-color: #FFFFFF;
+    margin: auto auto;
+    font-family: 'Kodchasan';
+}
+img{
+    width: 50%;
+    }
+
+.hidden{
+        display: none;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto  ;
+}
+
+#header{
+    grid-column: 1 / span 1;
+    background-color: #FF993B;
+    position: sticky;
+    top: 0;
+}
+.flex-header{
+    display: flex;
+    flex-wrap: nonwrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    
+}
+  .flex-header-l{
+      flex: 50%;
+      padding-left: 20px;
+  }
+  .flex-header-l img{
+      width: 20%;
+  }
+  .flex-header-r{
+      flex: 50%;
+      text-align: right;
+      /* เพิ่ม ปรับช่องว่างให้แคบลง */
+      padding-right: 25px;
+      display: inline-block;
+  }
+  .flex-header-r img{
+      width: 4%;
+      padding-left: 15px;
+  }
+
+
+#search{
+    grid-column: 1 / span 1;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    
+}
+.sendbox {
+    background-color: #e9e8e8;
+    padding-right: 500px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 60px;
+    border: none;
+    outline: none;
+    font-family: 'Kodchasan';
+    color: #6F6F6F;
+}
+#search img{
+    width: 20px;
+}
+.send-size{
+    width: 15px;
+}
+
+
+#profile{
+    grid-column: 1 / span 1;
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* #browsePic{
+	display: inline-block;
+	margin-right: 3%;
+} */
+#displayPic{
+	display: inline-block;
+	width:200px;
+	height: 200px;
+	border: 5px solid #FF993B;
+    border-radius: 50%;
+}
+#displayPic img{
+    width:100%;
+	height: 100%;
+    border-radius: 50%;
+}
+.profile-flex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#username{
+    color: #FF993B;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+#profile .profile-flex a{
+    color: #FF993B;
+    text-decoration-line: none;
+    padding-left: 300px;
+    font-size: 18px;
+}
+
+#datadescription{
+    color: #000000;
+    font-size: 15px;
+    padding-left: 50px;
+}
+#datatack{
+    color: #FF993B;
+    font-size: 18px;
+    padding-left: 50px;
+}
+
+
+
+#post{
+    grid-column: 1 / span 1;
+    margin-left: 250px;
+    margin-right: 250px;
+    color: #FF993B;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.postbox{
+    background-color: #F3F3F3;
+    border-radius: 30px;
+    margin-top: 18px;
+    
+}
+textarea{
+    background-color: #F3F3F3;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-family: 'Kodchasan';
+    color: #6F6F6F;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    max-width: 900px;
+    min-width: 900px;
+    font-size: 18px;
+    
+}
+#post input{
+    width: 40px;
+}
+.colphoto img{
+    width: 25px;
+}
+
+.colphoto{
+    margin-left: 40px;
+}
+.colphoto div{
+    
+    display: flex;
+    display: inline-block;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+
+.linesend {
+    display: grid;
+    grid-template-columns: 1fr max-content 0fr;
+    grid-column-gap: 10px;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.linesend::before,
+.linesend::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #FF993B;
+}
+
+
+#feed{
+    grid-column: 1 / span 1;
+    background-color: #F3F3F3;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #FF993B;
+    line-height: 50%;
+    margin-top: 40px;
+}
+hr{
+    border-top: 1px solid #FF993B;
+    margin-bottom: 40px;
+}
+
+#feed-container {
+    background-color: #F3F3F3;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+
+    #header{
+        grid-column: 1 / span 1;
+    }
+
+    #search{
+        grid-column: 1 / span 1;
+        margin-top: 10px;
+    }
+
+    #profile{
+        grid-column: 1 / span 1;
+    }
+
+    #post{
+        grid-column: 1 / span 1;
+        font-size: 20px;
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #feed{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+
+    .sendbox {
+        background-color: #e9e8e8;
+        padding-right: 100px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    textarea{
+        min-width: 80px;
+        max-width: 80px;
+    }
+    
+
+
+    .flex-header-l img{
+        width: 60%;
+    }
+    .flex-header-r img{
+        width: 12%;
+        padding-left: 15px;
+    }
+
+    #profile{padding-left: 0px;
+    padding-right: 0px;}
+    
+    #username{
+        font-size: 20px;
+        padding-left: 0px;
+        padding-right: 50px;
+    }
+
+    #profile .profile-flex a{
+        color: #FF993B;
+        text-decoration-line: none;
+        padding-left: 60px;
+        font-size: 8px;
+    }
+
+    #datadescription{
+        font-size: 8px;
+        padding-left: 12px;
+    }
+    #datatack{
+        font-size: 8px;
+        padding-left: 12px;
+    }
+    #displayPic{
+        width: 120px;
+        height: 120px;
+        margin-right: 30px;
+        margin-bottom: 15px;
+    }
+
+} 
+
+
+
+
+
+@media only screen and (max-width: 500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+    #header{
+        grid-column: 1 / span 1;
+    }
+
+    #search{
+        grid-column: 1 / span 1;
+        margin-top: 10px;
+    }
+
+    #profile{
+        grid-column: 1 / span 1;
+    }
+
+    #post{
+        grid-column: 1 / span 1;
+        font-size: 20px;
+
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #feed{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+
+    .sendbox {
+        background-color: #e9e8e8;
+        padding-right: 100px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    textarea{
+        min-width: 100px;
+        max-width: 100px;
+    }
+    
+
+
+    .flex-header-l img{
+        width: 60%;
+    }
+    .flex-header-r img{
+        width: 12%;
+        padding-left: 15px;
+    }
+
+    #profile{padding-left: 0px;
+    padding-right: 0px;}
+    
+    #username{
+        font-size: 20px;
+        padding-left: 0px;
+        padding-right: 50px;
+    }
+
+    #profile .profile-flex a{
+        color: #FF993B;
+        text-decoration-line: none;
+        padding-left: 60px;
+        font-size: 8px;
+    }
+
+    #datadescription{
+        font-size: 8px;
+        padding-left: 12px;
+    }
+    #datatack{
+        font-size: 8px;
+        padding-left: 12px;
+    }
+    #displayPic{
+        width: 120px;
+        height: 120px;
+        margin-right: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+.profileposterimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #FF993B;
+}
+
+.allboxpost {
+    background-color: #F3F3F3;
+    border-radius: 30px;
+    padding: 40px 60px;
+}
+
+.poster-box {
+    display: inline-block;
+}
+
+.poster-img {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #FF993B;
+    border-radius: 50%; 
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: middle;
+
+}
+
+ .poster-img img {
+    width: 100%;
+    height: 100%;
+
+} 
+
+.profilebox {
+    display: inline-block;
+}
+
+.post-by {
+    font-size: 25px;
+    color: #FF993B;
+    font-weight: bold;
+}
+
+.post-time {
+    font-size: 10px;
+    color: #6F6F6F;
+}
+.delete{
+    color: #FF993B;
+    font-size: 10px;
+}
+.content-box {
+    margin-left: 20px;
+}
+
+.gridReactButton img {
+    width: 35px;
+    margin-left: 15px;
+}
+
+.gridReactButton a {
+    font-size: 20px;
+    padding-left: 5px;
+    color: #FF993B;
+}
+
+.likebutton {
+    background: none;
+    border: none;
+}

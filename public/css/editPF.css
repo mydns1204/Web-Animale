@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Kodchasan');
+
+body {
+    background-color: #FFFFFF;
+    margin: auto auto;
+    font-family: 'Kodchasan';
+}
+img{
+    width: 50%;
+    }
+
+.hidden{
+        display: none;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto  ;
+}
+#header{
+    grid-column: 1 / span 1;
+    background-color: #FF993B;
+    position: sticky;
+    top: 0;
+}
+.flex-header{
+    display: flex;
+    flex-wrap: nonwrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    
+}
+  .flex-header-l{
+      flex: 50%;
+      padding-left: 20px;
+  }
+  .flex-header-l img{
+      width: 20%;
+  }
+  .flex-header-r{
+      flex: 50%;
+      text-align: right;
+      /* เพิ่ม ปรับช่องว่างให้แคบลง */
+      padding-right: 25px;
+      display: inline-block;
+  }
+  .flex-header-r img{
+      width: 4%;
+      padding-left: 15px;
+  }
+
+#backpage{
+    grid-column: 1 / span 1;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 50px;
+}
+#backpage img{
+    /* เพิ่ม ปรับขนาด */
+    width: 35px;
+    padding-right: 12px;
+    display: inline-block;
+}
+#backpage a{
+    color: #FF993B;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+
+#main{
+    grid-column: 1 / span 1;
+    font-size: 25px;
+    color: #FF993B;
+    font-weight: bold;
+    text-align: center;
+}
+
+#displayPic{
+	display: inline-block;
+	width:250px;
+	height: 250px;
+	border: 5px solid #FF993B;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#displayPic img{
+    width:100%;
+	height: 100%;
+}
+
+.edituser div{
+    display: inline-block;
+    margin-bottom: 30px; 
+    /* text-align: center; */
+}
+.edituser div input{  
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    width: 500px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    font-family: 'Kodchasan';
+    font-size: 18px;
+    color: #6F6F6F;
+}
+.editdescrip div{
+    display: inline-block; 
+    margin-bottom: 30px;   
+}
+.editdescrip textarea {
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    max-width: 480px;
+    min-width: 480px;
+    min-height: 100px;
+    max-height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    font-family: 'Kodchasan';
+    font-size: 18px;
+    color: #6F6F6F;
+}
+.edittack div{
+    display: inline-block; 
+    margin-bottom: 30px;   
+}
+.edittack textarea{
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    max-width: 480px;
+    min-width: 480px;
+    min-height: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    font-family: 'Kodchasan';
+    font-size: 18px;
+    color: #FF993B;
+}
+
+.submit{
+    background-color: #FF993B;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-bottom: 5%;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 60px;
+    font-size: 20px;
+    font-family: 'Kodchasan';
+}
+
+#userE{
+    margin-left: 10px;
+    margin-top: 30px; 
+    margin-right: 20px;
+}
+#descripE{
+    margin-top: 30px; 
+}
+#tackE{
+    margin-top: 30px; 
+    margin-right: 90px;
+}
+
+
+
+@media only screen and (max-width: 767px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+
+    #header{
+        grid-column: 1 / span 1;
+    }
+
+    #backpage{
+        grid-column: 1 / span 1;
+        /* เพิ่ม ปรับระยะห่างตามจอ */
+        margin-left: 40px;
+    }
+
+    #main{
+        grid-column: 1 / span 1;
+    }
+
+
+    /* เพิ่ม ปรับขนาดตัวอักษรตามจอ */
+    #backpage a{
+        font-size: 20px;
+    }
+
+
+    .flex-header-l img{
+        width: 40%;
+    }
+    .flex-header-r img{
+        width: 8%;
+        padding-left: 15px;
+    }
+
+
+    #userE{
+        /* เพิ่ม ปรับขนาดตัวอักษรตามจอ */
+        font-size: 16px;
+        float: left;
+        margin-left: 90px;
+        margin-top: 10px; 
+    }
+    #descripE{
+        /* เพิ่ม ปรับขนาดตัวอักษรตามจอ */
+        font-size: 16px;
+        float: left;
+        margin-left: 90px;
+        margin-top: 10px; 
+    }
+    #tackE{
+        /* เพิ่ม ปรับขนาดตัวอักษรตามจอ */
+        font-size: 16px;
+        float: left;
+        margin-left: 90px;
+        margin-top: 10px; 
+        margin-right: 90px;
+    }
+
+    .edituser div input{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .editdescrip textarea {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .edittack textarea{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+} 
+
+
+
+@media only screen and (max-width: 500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+
+    #header{
+        grid-column: 1 / span 1;
+    }
+
+    #backpage{
+        grid-column: 1 / span 1;
+        /* เพิ่ม ปรับระยะห่างตามจอ */
+        margin-left: 30px;
+    }
+
+    #main{
+        grid-column: 1 / span 1;
+    }
+
+
+
+    .flex-header-l img{
+        width: 60%;
+    }
+    .flex-header-r img{
+        width: 12%;
+        padding-left: 15px;
+    }
+
+    /* เพิ่ม ปรับขนาดตัวอักษรตามจอ */
+    #backpage a{
+        font-size: 15px;
+    }
+
+
+    #userE{
+        /* เพิ่ม ปรับขนาดตัวอักษรตามจอ */
+        font-size: 14px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px; 
+    }
+    #descripE{
+        /* เพิ่ม ปรับขนาดตัวอักษรตามจอ */
+        font-size: 14px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px; 
+    }
+    #tackE{
+        /* เพิ่ม ปรับขนาดตัวอักษรตามจอ */
+        font-size: 14px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px; 
+    }
+
+    .edituser div input{
+        margin-left: 10px;
+        margin-right: 10px;
+        /* เพิ่ม ปรับขนาดช่อง */
+        max-width: 320px;
+        min-width: 320px;
+    }
+    .editdescrip textarea {
+        margin-left: 10px;
+        margin-right: 10px;
+        /* เพิ่ม ปรับขนาดช่อง */
+        max-width: 320px;
+        min-width: 320px;
+    }
+    .edittack textarea{
+        margin-left: 10px;
+        margin-right: 10px;
+        /* เพิ่ม ปรับขนาดช่อง */
+        max-width: 320px;
+        min-width: 320px;
+    }
+}

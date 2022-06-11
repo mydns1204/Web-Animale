@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Kodchasan');
+
+body {
+    background-color: #FFFFFF;
+    margin: auto auto;
+    font-family: 'Kodchasan';
+}
+
+img {
+    width: 50%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+#header {
+    grid-column: 1 / span 3;
+    grid-row: 1/ span 1;
+    background-color: #FF993B;
+    position: sticky;
+    top: 0;
+}
+
+.flex-header {
+    display: flex;
+    flex-wrap: nonwrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+
+}
+
+.flex-header-l {
+    flex: 50%;
+    padding-left: 20px;
+}
+
+.flex-header-l img {
+    width: 200px;
+}
+
+.flex-header-r {
+    flex: 50%;
+    text-align: right;
+    padding-right: 50px;
+    display: inline-block;
+}
+
+.flex-header-r img {
+    width: 4%;
+    min-width: 40px;
+    padding-left: 15px;
+}
+
+#profile {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FF993B;
+    width: fit-content;
+}
+
+
+/* #profile { grid-area: profile;} */
+
+#displayPic {
+    width: 120px;
+    height: 120px;
+    border: 5px solid #FF993B;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 30px;
+
+}
+
+#displayPic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+#post {
+    grid-column: 2 / span 3;
+    grid-row: 2/ span 4;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+
+#share {
+    grid-column: 1 / span 1;
+    grid-row: 3/ span 1;
+    /* width: 500px; */
+    margin-left: 50px;
+    margin-top: 50px;
+    color: #FF993B;
+    font-size: 25px;
+    font-weight: bold;
+    width: fit-content;
+    
+}
+
+.postbox {
+    background-color: #F3F3F3;
+    border-radius: 30px;
+    margin-top: 15px;
+    width: fit-content;
+}
+
+textarea {
+    background-color: #F3F3F3;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border: none;
+    outline: none;
+    font-family: 'Kodchasan';
+    color: #6F6F6F;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    max-width: 350px;
+    min-width: 350px;
+    font-size: 18px;
+    min-height: 50px;
+}
+
+#share input {
+    width: 25px;
+}
+
+.colphoto img {
+    width: 20px;
+}
+
+.colphoto {
+    margin-left: 40px;
+}
+
+.colphoto div {
+    display: flex;
+    display: inline-block;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+
+.linesend {
+    display: grid;
+    grid-template-columns: 1fr max-content 0fr;
+    grid-column-gap: 10px;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.linesend::before,
+.linesend::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #FF993B;
+}
+
+
+#setting {
+    grid-column: 1 / span 1;
+    grid-row: 4/ span 1;
+    margin-left: 60px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF993B;
+    width: fit-content;
+}
+
+
+#setting img {
+    width: 50px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    padding-right: 20px;
+
+}
+
+#setting a {
+    vertical-align: middle;
+    color: #FF993B;
+    text-decoration-line: none;
+}
+
+/* โพส */
+
+.allboxpost {
+    background-color: #F3F3F3;
+    border-radius: 30px;
+    padding: 40px 60px;
+}
+
+.poster-box {
+    display: inline-block;
+}
+
+.poster-img {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #FF993B;
+    border-radius: 50%; 
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: middle;
+
+}
+
+ .poster-img img {
+    width: 100%;
+    height: 100%;
+
+} 
+
+.profilebox {
+    display: inline-block;
+}
+
+.post-by {
+    font-size: 25px;
+    color: #FF993B;
+    font-weight: bold;
+}
+
+.post-time {
+    font-size: 10px;
+    color: #6F6F6F;
+}
+.delete{
+    color: #FF993B;
+    font-size: 10px;
+}
+.content-box {
+    margin-left: 20px;
+}
+
+.gridReactButton img {
+    width: 35px;
+    margin-left: 15px;
+}
+
+.gridReactButton a {
+    font-size: 20px;
+    padding-left: 5px;
+    color: #FF993B;
+}
+
+.likebutton {
+    background: none;
+    border: none;
+}
+
+
+/* หน้าเปลี่ยนรหัส */
+.allchangpw{
+    color: #FF993B;
+    background-color: #F3F3F3;
+    border-radius: 30px;
+    padding: 40px 60px;
+    font-size: 20px;
+
+}
+.allchangpw hr{
+    border: 1px solid #FF993B;
+    
+
+}
+.allchangpw  input{
+    background-color: #E4E0E0;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    height: 40px;
+    
+    
+    margin: 10px 0px;
+    padding: 0px 20px;
+    font-family: 'Kodchasan';
+}
+
+.textsetting{
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+.textchang{
+    font-weight: bold;
+    font-size: 20px;
+}
+.allchangpw .save{
+    font-size: 20px;
+    text-align: center;
+    
+    background-color: #FF993B;
+    border-radius: 60px;
+    padding: 0px 15px;
+    color: white;
+    width: fit-content;
+}
+
+.profileposterimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #FF993B;
+    display: inline-block;
+}
