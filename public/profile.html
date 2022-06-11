@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animaLe</title>
+    <link type="text/css" rel="stylesheet" href="css/profile.css">
+    <script type="text/javascript" src="js/profile.js"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="header">
+            <div class="flex-header">
+                <div class="flex-header-l"><img src="pic/logo2.png" alt="logo"></div>
+                <div class="flex-header-r">
+                    <a href="/profile"><img src="pic/profile.png" alt="profile"></a>
+                    <a href="feed.html"><img src="pic/home.png" alt="home"></a>
+                </div>
+            </div>
+        </div>
+
+    
+        <div id="search">
+            <div>
+                <!-- <div>
+                    <img src="pic/arrow.png" alt="arrow">
+                    <a href="feed.html"><span id="username">Username</span></a>
+                </div> -->
+                <form action="">
+                    <div>
+                        <label><img src="pic/search.png" alt="search"></label>
+                        <input class="sendbox" type="text" name="search" value="" placeholder="ค้นหา Profile" required>
+                        <input class="send-size" type="image" src="pic/send.png" alt="search" name="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+
+        <div id="profile">
+            <div class="profile-flex" >
+                <div id="displayPic" >
+                    <div>
+                        <img src="pic/avatar.png" alt="">
+                    </div>
+                    <!-- <form action="">
+        
+                        </form> -->
+                </div>
+                <div>
+                    <div><span id="username"></span></div><br>
+                    <div><span id="datadescription" rows="3" cols="80">description</span></div><br><br>
+                    <div><span id="datatack">#นาก #แมว #หมา</span></div>
+                </div>
+                <div>
+                    <a href="edit-profile.html">Edit Profile</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Post -->
+        <div id="post">
+            <div>Share Post</div>
+            <div class="postbox">
+                <div>
+                    <div>
+                        <textarea name="msg" id="textmsg" value="" placeholder="Add text"  cols="50"></textarea>
+                        <div><span id=""></span></div>
+                        <!--แสดงไฟล์รูป-->
+                    </div>
+                    <div class="linesend">
+                        <input type="image" id="postfeed" src="pic/send.png" alt="post" name="post">
+                    </div>
+                </div>
+    
+                <!-- เลือกรูปโพส -->
+                <div class="colphoto">
+                    <div>
+                        <!-- <div> -->
+                            <img src="pic/Photo2.png" alt="Photo">
+                        <!-- </div> -->
+                        <form action="">
+                            <input type="file" id="fileField" name="PostPhoto" value="fileToUpload" placeholder="" hidden>
+                        </form>
+                    </div>
+                    <!-- เลือก # -->
+                    <div>
+                        <!-- <div> -->
+                            <img src="pic/Hashtag2.png" alt="">
+                        <!-- </div> -->
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    
+        <!-- Feed -->
+        <div id="feed">
+            <div id="feed-container">
+                    <div class="allpost">
+
+                        <div class="allboxpost">
+                            <!-- <div class="grid-container-postbox"> -->
+                                <div id="poster">
+                                    <div class="poster-box">
+                                        <div class="poster-img">
+                                            <img src="/public/pic/avatar.png">
+                                        </div>
+
+                                        <div class="profilebox">
+                                            <div class="post-by">
+                                                <span>daehwi</span>
+                                            </div>
+                                            <div class="post-time">
+                                                <small>2022-05-18 / 02:30</small>
+                                            </div>
+                                            <div class="delete">
+                                                delete
+                                            </div>
+                                        </div>
+                                        
+                                        <div id="content">
+                                            <div class="content-box">
+                                                <p>contentd</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            <!-- </div> -->
+
+                            <div class="Reactbutton">
+                                <button type="button" class="likebutton">
+                                    <div class="gridReactButton">
+                                        <img src="/public/pic/like.png">
+        
+                                        <a>0</a>
+                                    </div>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

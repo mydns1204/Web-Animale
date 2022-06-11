@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animaLe</title>
+    <link type="text/css" rel="stylesheet" href="css/feed.css">
+    <script type="text/javascript" src="js/setting.js"></script>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- 1 -->
+        <div id="header">
+            <div class="flex-header">
+                <div class="flex-header-l"><img src="pic/logo2.png" alt="logo"></div>
+                <div class="flex-header-r">
+                    <a href="profile.html"><img src="pic/profile.png" alt="profile"></a>
+                    <a href="feed.html"><img src="pic/home.png" alt="home"></a>
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div id="profile">
+            <div id="displayPic">
+                <div>
+                    <img src="pic/avatar.png" alt="">
+                </div>
+                <!-- <form action="">
+            
+                            </form> -->
+            </div>
+            <span id="username">Daehwi</span>
+        </div>
+        <!-- 3 -->
+        <div id="post">
+            <div class="allchangpw">
+                <div class="textsetting">Setting</div>
+                <div class="textchang">Change your password <hr></div>
+                    <form action="/editpass" method="post" accept-charset="utf-8">
+                        <div>Email</div>
+                        <input type="text" name="email" value="" placeholder="Email" required>
+                        <div>Current password</div>
+                        <input type="password" name="password" value="" placeholder="Current password" required>     
+                    <hr>
+                        <div>New password</div>
+                        <input type="password" name="newpassword" value="" placeholder="Current password" required>
+                        <div>Confirm password</div>
+                        <input type="password" name="retrypassword" value="" placeholder="Confirm password" required>
+                        <br><input class="save" type="submit" name="submit" value="Save">
+                    </form>
+
+                
+                
+                
+            </div>
+           
+        </div>
+
+
+        <!-- 4 share  Post -->
+        <div id="share">
+            <div>Share Post</div>
+            <div class="postbox">
+                <div>
+                    <div>
+                        <textarea name="msg" id="textmsg" value="" placeholder="Add text" cols="50"></textarea>
+                        <div><span id=""></span></div>
+                        <!--แสดงไฟล์รูป-->
+                    </div>
+                    <div class="linesend">
+                        <input type="image" id="postfeed" src="pic/send.png" alt="post" name="post">
+                    </div>
+                </div>
+
+                <!-- เลือกรูปโพส -->
+                <div class="colphoto">
+                    <div>
+                        <!-- <div> -->
+                        <img src="pic/Photo2.png" alt="Photo">
+                        <!-- </div> -->
+                        <form action="">
+                            <input type="file" id="fileField" name="PostPhoto" value="fileToUpload" placeholder=""
+                                hidden>
+                        </form>
+                    </div>
+                    <!-- เลือก # -->
+                    <div>
+                        <!-- <div> -->
+                        <img src="pic/Hashtag2.png" alt="">
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div id="setting">
+            <div>
+                
+            </div>
+                <a href=""><img src="pic/setting.png" alt=""></a>
+                <a href="">setting</a>
+            <div>
+                <a href="/logout"><img src="pic/logout.png" alt=""></a>
+                <a href="/logout">Logout</a>
+
+            </div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

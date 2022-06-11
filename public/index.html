@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animaLe</title>
+    <link type="text/css" rel="stylesheet" href="css/login.css" >
+    <script type="text/javascript" src="js/login.js" ></script>
+
+</head>
+<body>
+    <div class="grid-container">
+        <div id="header">
+            <img src="pic/logo2.png" alt="">
+        </div>
+        <div id="main">
+            <div id=container>
+                <form class="form" action="/checkLogin" method="post" accept-charset="utf-8">
+                    <!-- <fieldset> -->
+                        <div>
+                            <div class="login"> User Login </div> 
+                            <input type="text" name="username" value="" placeholder="Username" required>
+                            <input type="password" name="password" value="" placeholder="Password" required>
+                            <span id="errordisplay"></span>
+                            <div><input type="submit" value="Login"></div>
+                            <div class="line-login"> Don’t have account?  </div> 
+                            <div class="signup"><a href="signUp.html" class="">Sign up</a></div>
+                        </div>
+                        
+                    <!-- </fieldset> -->
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

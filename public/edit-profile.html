@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animaLe</title>
+    <link type="text/css" rel="stylesheet" href="css/editPF.css">
+    <script type="text/javascript" src="js/edit-profile.js"></script>
+</head>
+
+<body>
+    <div id="grid-container">
+        <!-- หัว -->
+        <div id="header">
+            <div class="flex-header">
+                <div class="flex-header-l"><img src="pic/logo2.png" alt="logo"></div>
+                <div class="flex-header-r">
+                    <a href="profile.html"><img src="pic/profile.png" alt="profile"></a>
+                    <a href="feed.html"><img src="pic/home.png" alt="home"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ย้อนกลับ -->
+        <div id="backpage">
+            <img src="pic/arrow.png" alt="">
+            <a href="profile.html">Edit Profile</a>
+        </div>
+
+        <!-- edit -->
+        <div id="main">
+            <div>Profile Picture</div>
+            <!-- edit photo -->
+            <!-- <div id="displayPic">
+                <div>
+                    <img src="pic/avatar.png" alt="">
+                </div>
+                <form action="/profilepic" method="post" id="formId" enctype="multipart/form-data">
+                    <input type="file" id="fileField" name="avatar" value="fileToUpload" placeholder="" hidden>
+                    <input type="button" class="upload" id="submitpic" value="Upload Profile image">
+                </form>
+            </div> -->
+            <div id="browsePic">
+                <div id="displayPic">
+                    <img src= "pic/avatar.png" alt="" >
+                </div>
+                <form action="/profilepic" method="post" id="formId" enctype="multipart/form-data">
+                    <input type="file" id="fileField" name="avatar" value="fileToUpload" placeholder="" hidden>
+                    <input type="button" class="upload" id="submitpic" value="Upload Profile image">
+                </form>
+            </div>
+            
+                <form class="form" action="/editinfo" method="post" accept-charset="utf-8" >
+                    <div class="edituser">
+                        <label for="" id="userE">Username :</label>
+                        <div><input type="text" name="username" value="" placeholder="username"></div>
+                    </div>
+                    <div class="editdescrip">
+                        <label for="" id="descripE">Description :</label>
+                        <div><textarea name="description" id="datadescription"  cols="50"></textarea></div>
+                    </div>
+                    <div class="edittack">
+                        <label for="" id="tackE">Tack :</label>
+                        <div><textarea name="tack" id="datatack"></textarea></div>
+                    </div>
+                    <input class="submit" type="submit" name="submit" value="Update">
+                </form>
+           
+            
+        </div>
+
+    </div>
+
+</body>
+
+</html>
